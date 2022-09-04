@@ -208,8 +208,8 @@ static int sensible_living_callback(r_device *decoder, bitbuffer_t *bitbuffer)
     /* clang-format off */
     data = data_make(
             "model",            "",                 DATA_STRING,  "SensibleLiving-Moisture",
-            "house_id",         "House ID",         DATA_INT,     house_id,
-            "module_id",        "Module ID",        DATA_INT,     module_id,
+            "channel",          "House ID",         DATA_INT,     house_id,
+            "id",               "Module ID",        DATA_INT,     module_id,
             "sensor_type",      "Sensor Type",      DATA_INT,     sensor_type,
             "sensor_count",     "Sensor Count",     DATA_INT,     sensor_count,
             "alarms",           "Alarms",           DATA_INT,     alarms,
@@ -237,8 +237,8 @@ static char *radiohead_ask_output_fields[] = {
 
 static char *sensible_living_output_fields[] = {
         "model",
-        "house_id",
-        "module_id",
+        "channel",
+        "id",
         "sensor_type",
         "sensor_count",
         "alarms",
